@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-md-12">
+    <form class="create-form">
+        <label for="burgername-input"><h2>Make Your Own Burger</h2></label>
+        <input id="newBurger" class="form-control input-lg" type="text">
+      <button type="submit" id="submit" class="btn btn-lg btn-danger submit" value="Submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+<!-- Burger List to Devour -->
+    <div class="col-md-6">
+      <h2>Ready to Eat</h2>
+      <div id="burgerList">
+
+        <!-- Burgers List -->
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+      </div>
+    </div>
+
+<!-- List of Burgers Already Devoured -->
+    <div class="col-md-6">
+      <h2>Already Eaten</h2>
+      <div id="devouredList">
+      <!-- Devoured List -->
+        <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+          {{/if}}
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+</div>

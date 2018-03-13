@@ -1,0 +1,51 @@
+body {
+  background: #67c5dd;
+  background-image: url("../images/spongebob.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: 60px;
+  align-content: left;
+}
+button {
+  display: inline;
+}
+div {
+  text-align: center;
+}
+h1 {
+  font-size: 65px;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 35px;
+}
+h1, h2 {
+  font-weight: bold;
+}
+#listItem {
+  text-align: left;
+}
+#newBurgers {
+  background-color: white;
+  opacity:.90;
+}
+#itemsDevoured {
+  text-decoration: line-through;
+}
+input, button {
+ font-size:25px;
+ font-weight:bold;
+}
+img {
+  width: 225px;
+  height: 225px;
+}
