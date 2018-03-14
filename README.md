@@ -12,6 +12,9 @@ In this assignment, we created a burger logger with MySQL, Node, Express, Handle
 
 * The app stores every burger in a database, whether devoured or not.
 
+### Burger App Screenshot
+![App_screenshot](/public/assets/images/screenshot.jpg)
+
 ### Directory Structure
 ```
 ├── config
